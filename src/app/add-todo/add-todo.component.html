@@ -1,4 +1,9 @@
-<form class="form" (ngSubmit)="onSubmit()">
-    <input type="text" name="title" [(ngModel)]="title" placeholder="Add Todo...">
-    <input type="submit" value="Submit" class="btn">
+<form class="form-row" (ngSubmit)="onSubmit()">
+    <div class="col-11">
+        <label class="sr-only" for="todoListAdditiion">Add a task you want to complete here!</label>
+        <input type="text" class="form-control" id="todoListAdditiion" name="title" [(ngModel)]="title" placeholder="Type a task you want to complete in here">
+    </div>
+    <div class="col">
+        <button type="button" class="btn btn-primary mb-2">Submit</button>
+    </div>
 </form>
